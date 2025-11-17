@@ -20,12 +20,22 @@ public class Yakuza extends Humain {
 		reputation+=1;
 	}
 	
-	public void direBonjour() {
-		super.direBonjour();
+	int perdre() {
+		parler("J’ai perdu mon duel et mes " + argent + " sous, snif... J'ai déshonoré le clan de " + clan + ".");
+		reputation--;
+		int perte = argent;
+		perdreArgent(argent);
+		return perte;
 	}
 	
-	public void boire(String boisson) {
-		super.boire(boisson);
+	void gagner(int gain) {
+		parler("Ce ronin pensait vraiment battre " + nom + " du clan de " + clan + " ? Je l'ai dépouillé de ses " + gain + " sous.");
+		reputation++;
+		gagnerArgent(gain);
+	}
+	
+	int getReputation() {
+		return reputation;
 	}
 
 }

@@ -17,18 +17,5 @@ public class Commercant extends Humain {
 		super.parler(argent + " sous ! Je te remercie généreux donateur!");
 		super.gagnerArgent(argent);
 	}
-	
-	public void direBonjour() {
-		super.direBonjour();
-	}
-	
-	public void boire(String boisson) {
-		super.boire(boisson);
-	}
-	
-	String getNom() {
-		return super.getNom();
-	}
-
 
 }
