@@ -6,14 +6,14 @@ public class Humain {
 	String boisson_favorite;
 	int argent;
 	
-	public Humain(String nom, String boisson_favorite, int quantite_argent) {
+	public Humain(String nom, String boisson_favorite, int argent) {
 		this.nom = nom;
 		this.boisson_favorite = boisson_favorite;
-		this.argent = quantite_argent;
+		this.argent = argent;
 	}
 	
 	void parler(String s) {
-		System.out.println("(Prof) - " + s);
+		System.out.println("(" + nom + ") - " + s);
 	}
 	
 	public void direBonjour() {
@@ -43,6 +43,10 @@ public class Humain {
 	
 	void perdreArgent(int perte) {
 		argent -= perte;
+	}
+	
+	String getNom() {
+		return nom;
 	}
 
 }

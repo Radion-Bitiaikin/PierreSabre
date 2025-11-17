@@ -1,7 +1,5 @@
 package personnages;
 
-import personnages.Humain;
-
 public class Commercant extends Humain {
 	
 	public Commercant(String nom, int argent) {
@@ -27,5 +25,10 @@ public class Commercant extends Humain {
 	public void boire(String boisson) {
 		super.boire(boisson);
 	}
+	
+	String getNom() {
+		return super.getNom();
+	}
+
 
 }
