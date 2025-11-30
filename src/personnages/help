@@ -1,0 +1,3 @@
+java histoire/HistoireTP5
+javac */*.java
+rm */*.class
