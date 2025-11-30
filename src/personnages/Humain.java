@@ -24,7 +24,9 @@ public class Humain {
 	}
 	
 	public void boire(String boisson) {
-		parler("Mmmm, un bon verre de " + boisson + " ! GLOUPS !");
+		if(boisson_favorite.equals(boisson)) {
+			parler("Mmmm, un bon verre de " + boisson + " ! GLOUPS !");
+		}
 	}
 	
 	public void acheter(String bien, int prix) {
