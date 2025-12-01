@@ -33,12 +33,12 @@ public class Humain {
 		if(argent > prix) {
 			parler("J'ai " + argent +
 					" sous en poche. Je vais pouvoir m'offrir " + bien +
-					" ' " + prix + " sous");
+					" a " + prix + " sous");
 			perdreArgent(prix);
 		} else {
 			parler("Je n'ai plus que " + argent +
-					" sous en poche. Je ne peux m'me pas m'orir " + bien +
-					" ' " + prix + " sous.");
+					" sous en poche. Je ne peux meme pas m'offrir " + bien +
+					" a " + prix + " sous.");
 		}
 	}
 	
@@ -52,6 +52,10 @@ public class Humain {
 	
 	String getNom() {
 		return nom;
+	}
+	
+	public int getArgent() {
+		return argent;
 	}
 
 	void memoriser(Humain autreHumain) {

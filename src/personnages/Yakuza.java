@@ -16,12 +16,12 @@ public class Yakuza extends Humain {
 		super.parler(nom_victime + ", si tu tiens a la vie donne moi ta bourse !");
 		int gain = victime.seFaireExtorquer();
 		super.gagnerArgent(gain);
-		super.parler("Jaai piqua les " + gain + " sous de " + nom_victime + ", ce qui me fait " + super.argent + " sous dans ma poche. Hi ! Hi !");
+		super.parler("J'ai pique les " + gain + " sous de " + nom_victime + ", ce qui me fait " + super.argent + " sous dans ma poche. Hi ! Hi !");
 		reputation+=1;
 	}
 	
 	int perdre() {
-		parler("Jaai perdu mon duel et mes " + argent + " sous, snif... J'ai dashonora le clan de " + clan + ".");
+		parler("J'ai perdu mon duel et mes " + argent + " sous, snif... J'ai deshonore le clan de " + clan + ".");
 		reputation--;
 		int perte = argent;
 		perdreArgent(argent);
@@ -29,7 +29,7 @@ public class Yakuza extends Humain {
 	}
 	
 	void gagner(int gain) {
-		parler("Ce ronin pensait vraiment battre " + nom + " du clan de " + clan + " ? Je l'ai dapouilla de ses " + gain + " sous.");
+		parler("Ce ronin pensait vraiment battre " + nom + " du clan de " + clan + " ? Je l'ai depouille de ses " + gain + " sous.");
 		reputation++;
 		gagnerArgent(gain);
 	}
